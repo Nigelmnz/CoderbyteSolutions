@@ -1,3 +1,5 @@
+// Sort the characters in a string.
+
 function AlphabetSoupTrivial(str) { 
   return str.split('').sort().join('')
 }
