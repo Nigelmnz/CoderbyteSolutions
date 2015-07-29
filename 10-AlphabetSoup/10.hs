@@ -1,3 +1,4 @@
+--Sort the characters in a string.
 import Data.List
 
 alphabetSoupTrivial :: String -> String

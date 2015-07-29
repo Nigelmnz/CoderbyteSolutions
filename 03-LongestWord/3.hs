@@ -1,3 +1,4 @@
+--Find the longest word in a sentence while excluding punctuation
 import Data.List
 
 longestWord :: String -> String

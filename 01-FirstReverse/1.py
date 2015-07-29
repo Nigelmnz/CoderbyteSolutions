@@ -1,3 +1,4 @@
+# Goal: Reverse a string!
 def FirstReverse(str):
   if len(str) == 0:
     return ""

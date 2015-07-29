@@ -1,3 +1,4 @@
+--Convert minutes to HH:MM
 timeConvert :: Int -> String
 timeConvert x = (show $ quot x 60) ++ ":" ++ (show $ mod x 60)
 

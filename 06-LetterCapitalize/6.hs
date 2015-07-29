@@ -1,3 +1,5 @@
+--Capitalize each word in a sentence 
+
 import Data.Char
 
 letterCapitalize :: String -> String
