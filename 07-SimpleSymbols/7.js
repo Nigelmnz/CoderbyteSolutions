@@ -14,4 +14,4 @@ function SimpleSymbolsRegex(str){
 }
 
 console.log(SimpleSymbols("+a++b+===+") === true);
-console.log(SimpleSymbols("++abc++") === false;
+console.log(SimpleSymbols("++abc++") === false);
