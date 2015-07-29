@@ -1,4 +1,4 @@
-My solutions to various problems at Coderbyte. Each one is done in the following languages:
+Each problem is solved using the following languages:
 
 -Javascript
 -Haskell
