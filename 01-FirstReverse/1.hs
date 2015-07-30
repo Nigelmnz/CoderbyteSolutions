@@ -1,3 +1,4 @@
+--Goal: Reverse a string!
 import Data.List
 
 firstReverseTrivial :: String -> String

@@ -1,3 +1,4 @@
+//Goal: Reverse a string!
 "use strict";
 
 function FirstReverseTrivial(str){
