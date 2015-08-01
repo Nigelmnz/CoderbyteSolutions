@@ -13,5 +13,5 @@ function SimpleSymbolsRegex(str){
   return !/(^|[^+])[a-z]|[a-z]([^+]|$)/gi.test(str)
 }
 
-console.log(SimpleSymbols("+a++b+===+") === true);
-console.log(SimpleSymbols("++abc++") === false);
+console.log(SimpleSymbols("+a++b+===+") === true)
+console.log(SimpleSymbols("++abc++") === false)

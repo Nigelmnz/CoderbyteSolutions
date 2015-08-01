@@ -1,10 +1,10 @@
 function SimpleAdding(num) { 
   var ans = 0;
   for(var i = num; i >= 0; i--){
-    ans += i;
+    ans += i
   }    
   
-  return ans;
+  return ans
 }
 
 function SimpleAddingFun(num){

@@ -6,11 +6,7 @@ function FirstReverseTrivial(str){
 }
 
 function FirstReverse(str) { 
-  if(str.length === 0){
-    return ""
-  }else{
-    return FirstReverse(str.slice(1)) + str[0]
-  }
+  return (str.length === 0) ? "" : FirstReverse(str.slice(1)) + str[0]
 }
 
 function FirstReverseFunctional(str){
