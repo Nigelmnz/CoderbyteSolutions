@@ -1,5 +1,5 @@
 // For each letter in a sentence, increment it (ex: a->b z->a) and then capitalize any vowels
-function LetterChanges(str) {
+function LetterChanges(str){
   function rplChar(c){
     if(/[zZ]/gi.test(c)){
      c = "a"

@@ -1,8 +1,8 @@
 // Asumming no zeros, detect if an array of numbers follows a artihmetic or geometric pattern
 
 function ArithGeo(arr){
-  if(arr[0] + (arr[2]-arr[1]) === arr[1] && (arr.length === 3 || ArithGeo(arr.splice(1)) === "Arithmetic")) return "Arithmetic"
-  if(arr[0] * (arr[2]/arr[1]) === arr[1] && (arr.length === 3 || ArithGeo(arr.splice(1)) === "Geometric")) return "Geometric"
+  if(arr[0] + (arr[2]-arr[1]) === arr[1] && (arr.length === 3 || ArithGeo(arr.slice(1)) === "Arithmetic")) return "Arithmetic"
+  if(arr[0] * (arr[2]/arr[1]) === arr[1] && (arr.length === 3 || ArithGeo(arr.slice(1)) === "Geometric")) return "Geometric"
   return -1
 }
 

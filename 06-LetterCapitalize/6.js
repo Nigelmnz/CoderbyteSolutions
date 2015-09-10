@@ -1,5 +1,5 @@
 // Capitalize each word in a sentence 
-function LetterCapitalize(str) { 
+function LetterCapitalize(str){ 
   return str.split(' ').map(function(str){
     return str[0].toUpperCase() + str.slice(1)
   }).join(' ')

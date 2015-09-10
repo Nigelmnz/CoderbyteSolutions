@@ -1,4 +1,4 @@
-function WordCount(str) { 
+function WordCount(str){ 
   var s = str.match(/\S+/g)
   return s ? s.length : 0      
 }

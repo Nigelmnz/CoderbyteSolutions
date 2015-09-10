@@ -3,7 +3,7 @@ function VowelCountRegex(str){
   return (result) ? result.length : 0
 }
 
-function VowelCount(str) { 
+function VowelCount(str){ 
   return str.split('').reduce(function(acc,c){
       return acc + (/[aeiou]/gi.test(c) ? 1 : 0)
     },0)

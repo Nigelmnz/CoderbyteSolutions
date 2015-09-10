@@ -5,7 +5,7 @@ function FirstReverseTrivial(str){
   return str.split('').reverse().join('')
 }
 
-function FirstReverse(str) { 
+function FirstReverse(str){ 
   return (str.length === 0) ? "" : FirstReverse(str.slice(1)) + str[0]
 }
 

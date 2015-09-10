@@ -3,7 +3,7 @@ function PalindromeTrivial(str){
   return str.split('').reverse().join('') === str;
 }
 
-function Palindrome(str) { 
+function Palindrome(str){ 
   str = str.replace(/\s/g,'')
   for(var i = 0; i < str.length/2; i++){
     if(str[i] !== str[str.length-i-1]) return false

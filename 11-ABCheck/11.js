@@ -1,5 +1,5 @@
 // Is any part of a string in the form of a???b or b???a ?
-function ABCheck(str) { 
+function ABCheck(str){ 
   return /(a...b)|(b...a)/gi.test(str)    
 }
 

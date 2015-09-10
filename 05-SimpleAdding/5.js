@@ -1,4 +1,4 @@
-function SimpleAdding(num) { 
+function SimpleAdding(num){ 
   var ans = 0;
   for(var i = num; i >= 0; i--){
     ans += i

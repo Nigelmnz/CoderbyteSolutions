@@ -1,59 +1,65 @@
 // Sort the characters in a string.
 
-function AlphabetSoupTrivial(str) { 
+function AlphabetSoupTrivial(str){ 
   return str.split('').sort().join('')
 }
 
-//Implementation of quicksort
-function AlphabetSoup(input){
-  var str = input.split('')
+//Functional implementation of quicksort. Works with characters only.
+function AlphabetSoupFunctional(str){
+  return sort(str.split(''))
+
+  function sort(arr){
+    if(arr.length === 0) return []
+
+    var pivot = arr.pop()
+    var small = sort(arr.filter(function(x){ return x <= pivot }))
+    var large = sort(arr.filter(function(x){ return x > pivot }))
+
+    return small + pivot + large
+  }
+}
+
+//In-place implementation of quicksort. Works with characters only.
+function AlphabetSoup(str){
+  var arr = str.split('')
+  sort(0, arr.length - 1)
+  return arr.join('')
+
   function sort(left,right){
-        
-      var pivot = Math.floor((left+right)/2)
-      var pVal  = str[pivot]
-      var l     = left
-      var r     = right
+    if(left < right){
+      var pivot = partition(left,right)
+      sort(left,pivot)
+      sort(pivot + 1, right)
+    }
+  }
 
-      while(l <= r){
-        while(str[l] < pVal){ //Find the first thing larger than p
-          l++
-        }
+  // Seperate the array into two sides, less than and grater the pivot
+  function partition(left,right){
+    var pVal = arr[left]
+    while(left < right){
+      while(arr[right] > pVal) right-- //Find the first thing smaller than p
+      while(arr[left] < pVal)  left++ //Find the first thing larger than p
 
-        while(str[r] > pVal){ //Find the first thing smaller than p
-          r--
-        }
-
-        if(l <= r){ //Swap em
-          swap(l,r)
-          l++
-          r--
-        }
+      if(left < right){
+        swap(left,right)
+        right--
+        left++
       }
+    }
 
-      pivot = l
-
-      if(left < pivot - 1){
-        sort(left,pivot-1) //Left
-      }
-
-      if(pivot < right){
-        sort(pivot,right) //Right
-      }
-
+    return right
   }
 
   function swap(a,b){
-    var t  = str[a]
-    str[a] = str[b]
-    str[b] = t
+    var t  = arr[a]
+    arr[a] = arr[b]
+    arr[b] = t
   }
-
-  sort(0,str.length-1)
-  return str.join('')
 }
 
 console.log(AlphabetSoup("hello") === "ehllo")
 console.log(AlphabetSoup("Test Case") === " CTaeesst")
+console.log(AlphabetSoupFunctional("Test Case") === " CTaeesst")
 
 
 

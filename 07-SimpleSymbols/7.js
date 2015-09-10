@@ -1,5 +1,5 @@
 // Given a string with alphabet [A-z],+,=: Does every letter have two "+"'s around it?
-function SimpleSymbols(str) { 
+function SimpleSymbols(str){ 
   for(var i=0; i < str.length; i++){
     if((/[a-z]/gi.test(str[i])) && (i === 0 || i === str.length-1 || (str[i-1] !== str[i+1]) || str[i-1] !== "+")){
         return false

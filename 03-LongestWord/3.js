@@ -1,5 +1,5 @@
 // Find the longest word in a sentence while excluding punctuation
-function LongestWord(sen) { 
+function LongestWord(sen){ 
   function rmPunct(s){ return s.replace(/[^\w\s]/g,"")}
 
   var words = sen.split(' ').sort(function(a,b){
