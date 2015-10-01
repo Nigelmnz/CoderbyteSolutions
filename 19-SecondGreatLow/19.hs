@@ -1,3 +1,4 @@
+--Given an list of #'s, print the second highest and lowest numbers of it
 import Data.List
 
 --Uses arrays

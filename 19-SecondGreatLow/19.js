@@ -1,9 +1,11 @@
+// Given an list of #'s, print the second highest and lowest numbers of it
+
 function SecondGreatLow(arr) { 
   var data = arr.sort(function(a,b){
     return a > b;
   }).reduce(function(acc,x){
     return (x !== acc[acc.length -1]) ? acc.concat(x) : acc;
-  },[]); 
+  },[]); //Reduce will remove duplicate numbers from the sorted list
   
   if(data.length > 1){
     return data[1] + " " + data[data.length - 2];
