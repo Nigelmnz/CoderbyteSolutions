@@ -20,9 +20,6 @@ countingMinutesIRegex str = mod (60*24 + time2 - time1) 60*24 --1440 mins in a d
           let (_,_,_,[hr,min,period]) = time =~ "([0-9]{1,2}):([0-9]{1,2})(am|pm)" :: (String,String,String,[String]) --yay,regex
           in (read hr `mod` 12) * 60 + (read min) + (if (elem 'a' period) then 0 else 60*12) -- modded hrs + mins + period
 
-
-regex str = str =~ "([0-9]{1,2}):([0-9]{1,2})(am|pm)-([0-9]{1,2}):([0-9]{1,2})(am|pm)" :: (String,String,String,[String])
-
 main = do
   print $ countingMinutesI "11:59pm-12:00am" == 1
   print $ countingMinutesI "5:20pm-6:30pm" == 70
