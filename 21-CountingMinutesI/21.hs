@@ -1,3 +1,5 @@
+--Given a time range string, find the number of minutes between the two times
+
 import Data.List.Split
 import Text.Regex.Posix
 
