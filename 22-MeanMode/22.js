@@ -6,7 +6,7 @@ function MeanMode(arr) {
     var num = arr[i];
     
     //Set Freq
-    mode.freqs[num] = (mode.freqs[num] === undefined) ? 0 : mode.freqs[num] + 1;
+    mode.freqs[num] = (mode.freqs[num] === undefined) ? 1 : mode.freqs[num] + 1;
            
     if(mode.freqs[num] >= mode.maxfreq){
       mode.val = num;
