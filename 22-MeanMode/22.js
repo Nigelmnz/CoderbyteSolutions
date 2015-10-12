@@ -1,3 +1,4 @@
+// Given a list of numbers, find if the mean and mode are equal. If so, return 1. Otherwise, 0.
 function MeanMode(arr) { 
   var sum = 0;
   var mode = {val: 0, maxfreq: -1, freqs:{}};
