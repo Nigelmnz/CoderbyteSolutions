@@ -1,3 +1,4 @@
+--Add all numbers from 1 to n
 simpleAdding :: Int -> Int
 simpleAdding 0 = 0
 simpleAdding x = x + simpleAdding (x-1)

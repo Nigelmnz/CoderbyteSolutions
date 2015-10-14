@@ -1,3 +1,4 @@
+//Add all numbers from 1 to n
 function SimpleAdding(num){ 
   var ans = 0;
   for(var i = num; i >= 0; i--){

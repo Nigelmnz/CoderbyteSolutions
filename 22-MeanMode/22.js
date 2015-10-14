@@ -24,4 +24,3 @@ console.log(MeanMode([1,2,2,3])   === 1);
 console.log(MeanMode([4,4,4,6,2]) === 1);
 console.log(MeanMode([1,2,3])     === 0);
 console.log(MeanMode([67,1,1])    === 0);
-console.log(lol(2));

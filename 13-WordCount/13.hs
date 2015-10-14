@@ -1,3 +1,5 @@
+--Count the number of words in a string
+
 wordCount :: String -> Int
 wordCount = length . words
 

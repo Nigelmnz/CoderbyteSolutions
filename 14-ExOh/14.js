@@ -1,3 +1,4 @@
+//Check if 'x' and 'o''s within a string are balanced in number
 function ExOh(str){ 
   return str.split('').reduce(function(acc,c){
     return acc + (c === 'x' ? 1 : -1)

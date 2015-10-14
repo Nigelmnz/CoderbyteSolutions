@@ -1,3 +1,4 @@
+//Find the factorial of a number
 "use strict";
 
 function FirstFactorial(num){ 

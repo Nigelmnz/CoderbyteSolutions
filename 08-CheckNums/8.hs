@@ -1,3 +1,4 @@
+--Return the greater of two nums
 import Data.Traversable
 
 checkNums :: Int -> Int -> Either Int Bool

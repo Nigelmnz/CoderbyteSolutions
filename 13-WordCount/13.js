@@ -1,3 +1,4 @@
+//Count the number of words in a string
 function WordCount(str){ 
   var s = str.match(/\S+/g)
   return s ? s.length : 0      

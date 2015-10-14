@@ -1,3 +1,4 @@
+--Find the factorial of a number
 import Data.List
 
 firstFactorial :: Int -> Int

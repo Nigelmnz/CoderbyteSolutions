@@ -1,3 +1,4 @@
+//Count the number of vowels in a word
 function VowelCountRegex(str){
   var result = str.match(/[aeiou]/gi)
   return (result) ? result.length : 0

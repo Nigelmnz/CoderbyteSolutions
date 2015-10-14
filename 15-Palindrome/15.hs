@@ -1,3 +1,4 @@
+--Check if something is a palindrome
 palindrome :: String -> Bool
 palindrome str = cStr == reverse cStr
   where cStr = filter (/= ' ') str 
